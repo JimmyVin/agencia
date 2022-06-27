@@ -237,28 +237,34 @@
         flex-direction: row;
     }
     
+    p{
+        padding:20px;
+        text-align: justify;
+    }
+
     h1, h2, h3, h4{
         text-align: center;
     }
     
-    .center h2{
-        color: white;
-    }
-    
+
+
     .center .contenedor{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        padding: 20px 0;
         
+    }
+
+    .abajo{
+        background-color: rgba(0, 0, 0, 0.37);
+        color: white;
     }
     
     .contenedor .contactos,a, img{
         display: block;
     }
     
-    .abajo p{
-        color: white;
-        text-align: center;
-    }
+
     /*fin footer*/
 }
