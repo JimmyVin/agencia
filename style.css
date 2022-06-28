@@ -220,6 +220,7 @@
         padding: 10px;
         background-color: purple;
         color: white;
+        border-bottom: solid 5px black;
     }
     
     .banner{
@@ -233,6 +234,7 @@
         display: block;
         margin: 0 auto;
         width: 500px;
+        padding: 10px;
     }
     
     .contenedor, h2, p{
@@ -246,25 +248,33 @@
     .contenedor_contenido{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         width: 100%;
         margin: 0 auto;
-        padding: 10px;
 
+    }
+
+    .contenedor_contenido div{
+        height: auto;
+        max-width: 400px;
+        background-color: rgba(255, 255, 255, 0.24);
     }
 
     .contenedor_contenido div img{
         display: block;
         margin: 0 auto;
         width: 100%;
+        height: 300px;
         max-width: 500px;
         max-height: 500px;
-        padding: 20px 0;
+        padding: 10px 5px;
+    }
+
+    .contenedor_contenido div p a{
+        color: white;
     }
 
 
-    .contenido{
-        padding: 20px 200px;
-    }
     /* fin contenido*/
     
     /*footer*/
@@ -300,7 +310,12 @@
         display: block;
     }
 
-    
+    .reservaciones{
+        max-width: 400px;
+        margin: 0  auto;
+        background-color: purple;
+        padding: 20px;
+    }
     
 
     /*fin footer*/
