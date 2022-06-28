@@ -11,20 +11,12 @@
 /////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////*/
 @media all and (max-width:767px) {
-    .publicidad{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+    
     .publicidad .izquierda{
-        display: block;
-        width: 150px;
-        background-image: url(1.gif);
+        display: none;
     }
     .publicidad .derecha{
-        display: block;
-        width: 150px;
-        background-image: url(kfc.gif);
+        display: none;
     }
 
     .contenedor_padre{
