@@ -11,11 +11,21 @@
 /////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////*/
 @media all and (max-width:767px) {
-    .publicidad .izquierda img{
-        display: none;
+    .publicidad{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
     }
-    .publicidad .derecha img{
-       display: none;
+    .publicidad .izquierda{
+        display: block;
+        width: 150px;
+        background-image: url(1.gif);
+    }
+    .publicidad .derecha{
+        display: block;
+        width: 150px;
+        background-image: url(kfc.gif);
     }
 
     .contenedor_padre{
@@ -37,7 +47,7 @@
 
     header{
         width: 100%;
-        height: 250px ;
+        height: 300px ;
     }
 
     .logo{
@@ -53,8 +63,6 @@
     .menu{
         display: flex;
         flex-direction: column;
-        /*flex-wrap: wrap;
-        justify-content: space-between;*/
         background-color: purple;
         padding: 5px;
         
@@ -72,11 +80,6 @@
     }
 
     /*BANNER*/
-    .banner{
-        /*display: flex;
-        flex-direction: row;
-        justify-content: space-between;*/
-    }
     .menu_izquierda{
         display: none;
     }
@@ -103,6 +106,24 @@
         text-align: center;
     }
 
+    .contenedor_contenido{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .contenedor_contenido div img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+        max-height: 500px;
+        padding: 20px 0;
+    }
+
     /*FOOTER*/
 
     .center .contenedor{
@@ -120,13 +141,12 @@
 
 }
 
-/*@media all and (min-width:768px) and (max-width:){
 
-}*/
-
-@media all and (min-width:991px) and (max-width:2000px){
+@media all and (min-width:768px){
     a{
         text-decoration: none;
+        color: black;
+        text-align: center;
     }
     
     body{
@@ -138,10 +158,9 @@
     }
     
     .contenedor_padre{
-        width: 100%;
-        max-width: 1700px;
+        max-width: 1200px;
         margin: auto;
-        background-color: rgba(255, 255, 255, 0.075);
+        background-color: rgba(255, 255, 255, 0.116);
     }
     
     /* CABEZERA */
@@ -173,7 +192,9 @@
     
     .menu a:hover{
         color: purple;
-        background-color: aliceblue;
+        box-shadow: 0 0 10px 10px white;
+        background-color: white;
+        border-radius: 20%;
     }
     
     /*CONTENIDO*/
@@ -191,18 +212,26 @@
         padding: 20px;
     }
 
-    .publicidad .izquierda img{
+    .publicidad .izquierda{
         display: block;
         width: 450px;
+        background-image: url(GIF-MKT-1.gif);
     }
 
-    .publicidad .derecha img{
+    .publicidad .derecha{
         display: block;
         width: 500px;
+        background-image: url(moto.gif);
         
     }
     
     /*banner*/
+
+    td h3{
+        padding: 10px;
+        background-color: purple;
+        color: white;
+    }
     
     .banner{
         display: flex;
@@ -225,7 +254,25 @@
     /*fin banner*/
     
     /*cotenido*/
-    
+    .contenedor_contenido{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+
+    }
+
+    .contenedor_contenido div img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+        max-height: 500px;
+        padding: 20px 0;
+    }
+
+
     .contenido{
         padding: 20px 200px;
     }
@@ -249,7 +296,6 @@
 
 
     .center .contenedor{
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         padding: 20px 0;
@@ -264,6 +310,8 @@
     .contenedor .contactos,a, img{
         display: block;
     }
+
+    
     
 
     /*fin footer*/
